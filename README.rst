@@ -3,14 +3,14 @@ Shift
 =====
 
 
-.. image:: https://img.shields.io/pypi/v/okapi.svg
-        :target: https://pypi.python.org/pypi/okapi
+.. image:: https://img.shields.io/pypi/v/shift.svg
+        :target: https://pypi.python.org/pypi/shift
 
-.. image:: https://img.shields.io/travis/Pavel-Hrdina/okapi.svg
-        :target: https://travis-ci.com/Pavel-Hrdina/okapi
+.. image:: https://img.shields.io/travis/Pavel-Hrdina/shift.svg
+        :target: https://travis-ci.com/Pavel-Hrdina/shift
 
 .. image:: https://readthedocs.org/projects/okapi/badge/?version=latest
-        :target: https://okapi.readthedocs.io/en/latest/?badge=latest
+        :target: https://shift.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
