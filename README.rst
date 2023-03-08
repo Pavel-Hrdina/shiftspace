@@ -16,7 +16,7 @@ Shift
 
 
 
-Python Boilerplate contains all the boilerplate you need to create a Python package.
+A Python package, that creates a reproducable workspace
 
 
 * Free software: MIT

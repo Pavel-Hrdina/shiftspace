@@ -6,7 +6,8 @@ class Main():
 
     This class is responsible for managing the main application and its features.
     """
-    def __init__(self) -> None:
+
+    def __init__(self, location: str, folders: list) -> None:
         """Initializes the Main class.
 
         This method sets up the Main class for use.
