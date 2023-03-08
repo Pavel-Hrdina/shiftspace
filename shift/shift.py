@@ -41,8 +41,12 @@ class Main:
             logger.exception("folder: 'workspace' already exists")
             sys.exit()
 
-    def hello(self):
-        print("Hello world!")
+    def generate_folders(self):
+        """_Create subfolders
+
+        Create necessary subfolders inside the workspace folder.
+        """
+
 
 main = Main()
 
