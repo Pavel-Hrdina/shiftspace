@@ -16,7 +16,7 @@ Shift
 
 
 
-A Python package, that creates a reproducable workspace
+A Python package, that creates a reproducible workspace
 
 
 * Free software: MIT
