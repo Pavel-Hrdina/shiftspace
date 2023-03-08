@@ -28,9 +28,10 @@ class Main:
         self.folders = []
 
     def create_workspace(self):
-        """_summary_
+        """Create the workspace folder.
 
-        _extended_summary_
+        This method creates the 'workspace' folder at the specified location.
+        If the folder already exists, an OSError is raised and the program exits.
         """
         logger.info("create workspace...")
         try:
