@@ -1,16 +1,14 @@
 """Main module."""
-import sys
 import os
-
+import sys
 from pathlib import Path
+
 from loguru import logger
 
 HOME_DIR = Path.home()
 TEMP = str(HOME_DIR) + "\\temp"
 YEAR = ""
-ROOT_FOLDERS = [
-    "workspace",
-]
+ROOT_FOLDERS = ["docs", "projects", "tools"]
 
 
 class Main:
@@ -40,7 +38,7 @@ class Main:
         logger.info("create workspace...")
         try:
             os.makedirs(self.location + "\\workspace")
-            logger.info("done!")
+            logger.success("done!")
         except OSError:
             logger.exception("folder: 'workspace' already exists")
             sys.exit()

@@ -2,8 +2,8 @@
 [tool.poetry]
 name = "shift"
 version = "0.1.0"
-homepage = "https://github.com/Pavel-Hrdina/okapi"
-description = "Top-level package for Okapi."
+homepage = "https://github.com/Pavel-Hrdina/shift"
+description = "Top-level package for Shift."
 authors = ["Pavel Hrdina <pavel.hrdina.ml@seznam.cz>"]
 readme = "README.rst"
 license =  "MIT"

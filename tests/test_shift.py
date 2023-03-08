@@ -2,11 +2,10 @@
 """Tests for `shift` package."""
 # pylint: disable=redefined-outer-name
 
-import pytest
-
-
-from pathlib import Path
 import os
+from pathlib import Path
+
+import pytest
 
 
 @pytest.fixture
@@ -28,4 +27,4 @@ def test_content(response):
 
 def create_workspace():
     """Test the main class"""
-    assert os.path.exists(str(Path.home()) + "\\temp" + "\\workspace") == True
+    assert os.path.exists(str(Path.home()) + "\\temp" + "\\workspace")
