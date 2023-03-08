@@ -48,9 +48,9 @@ class Main:
         """
 
 
-main = Main()
+main = Main(TEMP, ROOT_FOLDERS)
 
-main.hello()
+main.create_workspace()
 
-if __name__ == '__main__ ':
+if __name__ == "__main__ ":
     sys.exit()
