@@ -29,7 +29,7 @@ class Main:
             folders (list): list of folders to generate
         """
         self.location = location
-        self.folders = []
+        self.folders = folders
 
     def create_workspace(self):
         """Create the workspace folder.
@@ -50,11 +50,21 @@ class Main:
 
         Create necessary subfolders inside the workspace folder.
         """
+        logger.info("create level 2 subfolders...")
+
+        for items in self.folders:
+            logger.info(
+                f"create subfolder {items} at {self.location}\\workspace\\{items}"
+            )
+            os.mkdir(f"{self.location}\\workspace\\{items}")
+
+        logger.success("done!")
 
 
 main = Main(TEMP, ROOT_FOLDERS)
 
 main.create_workspace()
+main.generate_folders()
 
 if __name__ == "__main__ ":
     sys.exit()
