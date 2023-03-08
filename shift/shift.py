@@ -12,7 +12,8 @@ ROOT_FOLDERS = [
     "workspace",
 ]
 
-class Main():
+
+class Main:
     """A class that represents the main application.
 
     This class is responsible for managing the main application and its features.
