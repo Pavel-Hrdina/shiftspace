@@ -23,7 +23,21 @@ class Main():
 
         This method sets up the Main class for use.
         """
-        pass
+        self.location = location
+        self.folders = []
+
+    def create_workspace(self):
+        """_summary_
+
+        _extended_summary_
+        """
+        logger.info("create workspace...")
+        try:
+            os.makedirs(self.location + "\\workspace")
+            logger.info("done!")
+        except OSError:
+            logger.exception("folder: 'workspace' already exists")
+            sys.exit()
 
     def hello(self):
         print("Hello world!")
