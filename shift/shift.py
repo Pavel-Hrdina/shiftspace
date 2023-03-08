@@ -1,5 +1,16 @@
 """Main module."""
 import sys
+import os
+
+from pathlib import Path
+from loguru import logger
+
+HOME_DIR = Path.home()
+TEMP = str(HOME_DIR) + "\\temp"
+YEAR = ""
+ROOT_FOLDERS = [
+    "workspace",
+]
 
 class Main():
     """A class that represents the main application.
