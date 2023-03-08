@@ -23,6 +23,10 @@ class Main:
         """Initializes the Main class.
 
         This method sets up the Main class for use.
+
+        Args:
+            location (str): location of the root folder
+            folders (list): list of folders to generate
         """
         self.location = location
         self.folders = []
