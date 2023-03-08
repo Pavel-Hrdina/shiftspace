@@ -19,7 +19,7 @@ classifiers=[
     'Programming Language :: Python :: 3.8',
 ]
 packages = [
-    { include = "shift" },
+    { include = "shiftspace" },
     { include = "tests", format = "sdist" },
 ]
 
