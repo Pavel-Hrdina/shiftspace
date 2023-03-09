@@ -1,35 +1,22 @@
 """Main module."""
 import os
 import sys
-from pathlib import Path
+from dataclasses import dataclass
 
 from loguru import logger
 
-HOME_DIR = Path.home()
-TEMP = str(HOME_DIR) + "\\temp"
-YEAR = ""
-ROOT_FOLDERS = ["docs", "projects", "tools"]
 
-
-class Main:
+@dataclass
+class Main(object):
     """A class that represents the main application.
 
     This class is responsible for managing the main application and its features.
     """
 
-    def __init__(self, location: str, folders: list) -> None:
-        """Initializes the Main class.
+    location: str
+    folders: list
 
-        This method sets up the Main class for use.
-
-        Args:
-            location (str): location of the root folder
-            folders (list): list of folders to generate
-        """
-        self.location = location
-        self.folders = folders
-
-    def create_workspace(self):
+    def create_workspace(self) -> None:
         """Create the workspace folder.
 
         This method creates the 'workspace' folder at the specified location.
@@ -43,7 +30,7 @@ class Main:
             logger.exception("folder: 'workspace' already exists")
             sys.exit()
 
-    def generate_folders(self):
+    def generate_folders(self) -> None:
         """_Create subfolders
 
         Create necessary subfolders inside the workspace folder.
@@ -57,12 +44,3 @@ class Main:
             os.mkdir(f"{self.location}\\workspace\\{items}")
 
         logger.success("done!")
-
-
-main = Main(TEMP, ROOT_FOLDERS)
-
-main.create_workspace()
-main.generate_folders()
-
-if __name__ == "__main__ ":
-    sys.exit()
