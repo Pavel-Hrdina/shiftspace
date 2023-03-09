@@ -1,11 +1,11 @@
 [tool]
 [tool.poetry]
 name = "shiftspace"
-version = "0.1.0"
+version = "0.1.1"
 homepage = "https://github.com/Pavel-Hrdina/shift"
 description = "Top-level package for ShiftSpace."
 authors = ["Pavel Hrdina <pavel.hrdina.ml@seznam.cz>"]
-readme = "README.rst"
+readme = "README.md"
 license =  "MIT"
 classifiers=[
     'Development Status :: 2 - Pre-Alpha',
@@ -26,6 +26,7 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.7,<4"
 loguru = "^0.6.0"
+ruff = "^0.0.254"
 
 [tool.poetry.dev-dependencies]
 bumpversion = "*"
